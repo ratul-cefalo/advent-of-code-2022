@@ -2,8 +2,6 @@ from functools import partial, cache
 from icecream import ic
 from rps_input import given_cases
 
-# print(given_cases[-5:])
-
 
 def checker(instance: str, cases: set[str]) -> bool:
     return True if instance in cases else False
