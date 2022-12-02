@@ -1,5 +1,4 @@
 from functools import partial, cache
-from icecream import ic
 from rps_input import given_cases
 
 
@@ -34,9 +33,10 @@ def total_score_puzzle1(cases=['A Y', 'B X', 'C Z']):
 
 
 def total_score_puzzle2(cases=['A Y', 'B X', 'C Z']):
-    '''X lose
-        Y draw
-        Z win
+    '''
+    X lose
+    Y draw
+    Z win
     '''
     transform = {
         "A X": "A C",
@@ -54,7 +54,7 @@ def total_score_puzzle2(cases=['A Y', 'B X', 'C Z']):
 
 
 if __name__ == "__main__":
-    assert total_score_puzzle1(), 15
-    assert total_score_puzzle2(), 12
-    ic(total_score_puzzle1(given_cases))
-    ic(total_score_puzzle2(given_cases))
+    assert total_score_puzzle1() == 15
+    assert total_score_puzzle1(given_cases) == 13005
+    assert total_score_puzzle2() == 12
+    assert total_score_puzzle2(given_cases) == 11373
