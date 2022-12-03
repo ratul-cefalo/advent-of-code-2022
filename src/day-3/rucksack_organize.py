@@ -1,5 +1,5 @@
 from icecream import ic
-from puzzle_input import given_cases
+from rucksack_input import given_cases
 import string
 
 char_values = {
